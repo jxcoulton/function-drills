@@ -177,6 +177,7 @@ let arrayIsAscending = isAscending(sampleArray)
 console.log(arrayIsAscending)
 
 //problem 15
+
 let duck = "cute";
 
 function bathroom() {
@@ -197,16 +198,17 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = duck
+let globalScope = [`duck`]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = 
+let bathroomScope = [`duck`, 'rubberDuck']
 
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = 
+let bathtubScope = [`duck`, `rubberDuck`, `sailorDuck`]
 
-//This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+// //This array should contain the variable names (as strings) accessible in the pond function.
 
-console.log(globalScope, bathtubScope)
+let pondScope = [`duck`, `realDuck`]
+
+console.log(globalScope, bathroomScope, bathtubScope, pondScope)
